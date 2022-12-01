@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-sample
+  description: Sample React web app
+  labels:
+    system: web-apps
+  tags:
+    - javascript
+    - react
+  links:
+    - url: https://github.com/nsoomani107/backstage-sample
+      title: Backstage Sample GitHub
+      icon: code
+  annotations:
+    pagerduty.com/integration-key: c9181af33a984c06d01144f420df074e
+    opsgenie.com/component-selector: 'tag:"service:backstage-sample"'
+    jenkins.io/github-folder: 'nsoomani107/backstage-sample'
+    fossa.io/project-name: backstage-sample
+    snyk.io/org-name: nsoomani
+    snyk.io/project-ids: 1aff69bc-de69-4d0c-b069-187b159c4465
+    github.com/project-slug: 'nsoomani107/backstage-sample'
+    goharbor.io/repository-slug: 'nsoomani107/backstage-sample'
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: experimental
+  owner: nsoomani107
